@@ -7,29 +7,30 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="top">
+      <div class="top">
         <div class="logo">
-          <h1>ТЕХНОМАРТ</h1>
+          <h1>Техномарт</h1>
         </div>
         <a href="#">Поиск:</a>
         <a href="#">Закладки: <span>0</span></a>
         <a href="#">Корзина: <span>10</span></a>
         <a href="#">Оформить заказ</a>
-      </section>
-      <section class="header-slogan">
+      </div>
+      <div class="header-slogan">
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      </section>
+      </div>
       <div class="header-contacts">
         <span>+7 (812) 555-05-55</span>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <ul class="user-navigation">
+
+      <div class="user-navigation">
         <a href="#"><span>Равшан Джамшутович</span></a>
-        <div class="logout">
-        </div>
-        <li class="login-link"><a href="#">Мои заказы</a></li>
-        <li class="reg"><a href="#">Личный кабинет</a></li>
-      </ul>
+        <button class="logout"></button>
+        <a class="login-link" href="#">Мои заказы</a>
+        <a class="account" href="#">Личный кабинет</a>
+      </div>
+
       <nav class="header-navigation">
         <ul class="site-navigation">
           <li>Главная</li>
@@ -44,23 +45,24 @@
     </header>
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html">КАТАЛОГ</a></li>
-        <li><a href="catalog.html">ИНСТРУМЕНТ</a></li>
-        <li class="breadcrumbs-current">ПЕРФОРАТОРЫ</li>
+        <li class="index"><a href="index.html"></li>
+        <li class="catalog"><a href="#">Каталог</a></li>
+        <li class="instrument"><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
-      <h1 class="page-title">ПЕРФОРАТОРЫ</h1>
+      <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
       </section>
       <section class="catalog">
         <div class="catalog-filter">
-          <span>СОРТИРОВКА:</span>
-          <span class="catalog-filter-active">ПО ЦЕНЕ</span>
-          <span class="catalog-filter-not-active">ПО ТИПУ</span>
-          <span class="catalog-filter-not-active">ПО ФУНКЦИОНАЛУ</span>
-          <div class="catalog-filter-arrow-active"></div>
-          <div class="catalog-filter-arrow-not-active"></div>
+          <span>Сортировка:</span>
+          <span class="filter-price">По цене</span>
+          <span class="filter-tipe">По типу</span>
+          <span class="filter-function">По функционалу</span>
+          <div class="filter-arrow-up"></div>
+          <div class="filter-arrow-down"></div>
         </div>
         <h2 class="visually-hidden">Перфораторы</h2>
         <ul class="catalog-list">
@@ -138,27 +140,27 @@
           <li class="pagination-item  pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section class="about-perforator">
-        <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+        <h3>Пара слов о перфораторах</h3>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <section class="colomn1">
+        <div class="footter-colomn-left">
           <div class="footer-logo">
-            <h1>ТЕХНОМАРТ</h1>
+            <h1>Техномарт</h1>
           </div>
           <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
           </p>
-        </section>
-        <section class="colomn2">
+        </div>
+        <div class="footter-colomn-right">
           <ul class="footer-navigation-white">
             <li>Главная</li>
             <li><a href="#">Компания</a></li>
@@ -173,19 +175,17 @@
             <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
           </ul>
-        </section>
+        </div>
       </div>  
       <div class="footer-bottom">
         <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
           Все права защищены
         </p>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
-          </ul>
-        </div>
+         <ul>
+           <li><a class="social-button" href="#">Вконтакте</a></li>
+           <li><a class="social-button" href="#">Фейсбук</a></li>
+           <li><a class="social-button" href="#">Инстаграм</a></li>
+         </ul>
         <p class="feedback">
           <span>Обратная связь:</span>
           <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
