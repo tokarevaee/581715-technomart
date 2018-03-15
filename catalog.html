@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт/Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalise.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -35,25 +35,27 @@
 				Корзина: <span>10</span></a>
         <a href="#">Оформить заказ</a>
       </div>
-      <p class="header-slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-			<a href="tel:898125550555">
+			<p class="header-slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+			<a class="header-contacts" href="tel:898125550555">
         <img src="img/icon-phone.svg">
         +7 (812) 555-05-55
       </a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <div class="user-navigation">
-        <a href="#">
+      <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <div class="user-navigation-katalog">
+        <div class="white-block">
+				<a href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-          <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+          <path fill="#c5c5c5" id="icon-user" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
         </svg>
 				<span>Равшан Джамшутович</span></a>
 				<button class="logout" aria-label="Выйти из аккаунта">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-            <g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
-            <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
+          <svg xmlns="http://www.w3.org/2000/svg" id="icon-logout" width="21" height="17" viewBox="0 0 21 17">
+            <g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" id="icon-logout"/>
+            <path id="icon-logout" fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g>
           </svg>
 				</button>
-        <a class="btn login-link" href="#">Мои заказы</a>
+			</div>
+        <a class="btn my-orders" href="#">Мои заказы</a>
         <a class="btn account" href="#">Личный кабинет</a>
       </div>
       <nav class="header-navigation">
@@ -78,12 +80,14 @@
       <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+				<div><span>Фильтр:</span><br>
+				</div>
         <form class="filter-main" method="get" action="https://echo.htmlacademy.ru">
-          <span>Фильтр:</span><br>
-          <label for="filter-price">
-            Цена:
+					
+					<label for="filter-price">
+						<legend>Цена:</legend>
           </label><br>
-          <input type="range" min="0" max="30000" step="1">
+					<span><input type="range" min="0" max="30000" step="1"></span><br>
           <span>0</span>-<span>30000</span>
             <fieldset>
               <legend>Производители:</legend>
@@ -107,7 +111,7 @@
                   </label>
                 </li>
                 <li>
-                  <input type="checkbox" name="dewalt" id="filter-dewalt">  
+                  <input type="checkbox" name="dewalt" id="filter-dewalt"> 
                   <label for="filter-dewalt">
                   Dewalt
                   </label>
@@ -145,9 +149,9 @@
 
         <div class="catalog-filter">
           <span>Сортировка:</span>
-          <a class="filter-price" href="#">По цене</a>
-          <a class="filter-tipy" href="#" >По типу</a>
-          <a class="filter-function" href="#">По функционалу</a>
+          <a class="filter-price sort" href="#">По цене</a>
+          <a class="filter-tipe sort" href="#" >По типу</a>
+          <a class="filter-function sort" href="#">По функционалу</a>
           <a class="arrow arrow-up" href="#">Сортировка по возрастанию</a>
           <a class="arrow arrow-down" href="#">Сортировка по убыванию</a>
         </div>
@@ -249,7 +253,7 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
-      <section class="about-perforator">
+      <section class="about-products">
         <h3>Пара слов о перфораторах</h3>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -332,12 +336,13 @@
         <path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/>
         </svg>
       <span>Товар добавлен в корзину</span>
-      <button class="basket-button">
+      <div class="gray-line"><button class="button">
           Оформить заказ
       </button>
       <button class="button basket-button">
         Продолжить покупки      
       </button>
+				</div>
     </div>
   </body>
 </html>
