@@ -1,0 +1,78 @@
+
+form.search {
+  background-color: #293449;
+  border: none;
+  width: 240px;
+  min-height: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 10px;
+  outline: none;
+  display: block;
+}
+
+.search input[type=search] {
+  background-color: #293449;
+  border: none;
+  width: 200px;
+}
+
+.search input[type=search]:hover,
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search input[type="search"]:focus{
+  background-color: #ffffff;
+}
+
+.search-icon {
+  fill: #ffffff;
+  height: 17px;
+  width: 17px;
+  border: none;
+}
+
+form.search input[type=submit] {
+  display: none;
+}
+
+/*input[class="search-input"]:focus{*/
+  /*background-color: #ffffff;*/
+/*}*/
+
+#search:focus form .search {
+  background-color: #ffffff;
+}
+
+
+#search:focus #icon-search{
+
+ fill: red;
+
+}
+
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header {
+  outline: 1px solid red;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
