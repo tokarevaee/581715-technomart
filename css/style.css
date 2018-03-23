@@ -128,36 +128,68 @@ a.button:active {
 }
 
 form.search {
-  background-color: #293449;
+  font-family: "Cuprum", "Arial", sans-serif;
   border: none;
   width: 240px;
-  min-height: 15px;
+  min-height: 42px;
   font-size: 17px;
   line-height: 18px;
-  padding: 10px;
   outline: none;
   display: block;
+  position: relative;
 }
 
 .search input[type=search] {
   background-color: #293449;
   border: none;
-  width: 200px;
-}
+  width: 240px;
+  height: 42px;
+  padding-left: 50px;
 
-.search input[type=search]:hover,
-.search:hover {
-  background-color: #212a3a;
 }
-
-.search input[type=search]:focus {
+.search-icon {
+  height: 17px;
+  width: 17px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  cursor: pointer;
+}
+form.search:focus{
   background-color: #ffffff;
 }
 
-.search-icon {
-  fill: #ffffff;
-  height: 17px;
-  width: 17px;
+.search-input:focus ~ label svg{
+  fill: red;
+  background-color: transparent;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input[type="search"]:-moz-placeholder {
+  color: #ffffff;
+}
+
+input[type="search"]::-moz-placeholder {
+  color: #ffffff;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: #ffffff;
+}
+.search input[type="search"]:hover{
+  background-color: #212a3a;
+}
+
+.search input[type="search"]:focus{
+  background-color: #ffffff;
+  height: 42px;
+  padding-left: 50px;
+  color: #000000;
 }
 
 form.search input[type=submit] {
@@ -1257,6 +1289,17 @@ ul.social {
   width: 622px;
   height: 430px;
   border-top: 5px solid #ee3643;
+  padding: 0 80px ;
+  padding-top: 50px;
+  box-shadow: 0 0 30px 5px #000000;
+}
+
+.gray-line {
+  background-color: #f1f1f1;
+  min-height: 112px;
+  text-align: center;
+
+
 }
 .btn-write-us{
   width: 260px;
@@ -1565,12 +1608,7 @@ li.pagination-item-current {
   line-height: 30px;
 }
 
-.gray-line {
-  background-color: #f1f1f1;
-  min-height: 112px;
-  text-align: center;
 
-}
 
 .basket-button {
   background-color: #ffffff;
