@@ -303,7 +303,7 @@
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <a href="#">
+        <a class="map" href="#">
           <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="button btn-contacts" href="#">Заблудились? Напишите нам!</a>
@@ -388,7 +388,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <div class="modal-write-us">
     <div class="popup-write-us">
       <button class="modal-close" type="button">Закрыть</button>
       <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
@@ -409,13 +409,50 @@
         <button class="button btn-write-us">Отправить</button>
       </form>
     </div>
-  </section>
-  <div class="modal">
+  </div>
+  <div class="modal-popup-map">
     <div class="popup-map">
       <button class="modal-close" type="button">Закрыть</button>
-      <img src="img/popup-map.jpg" width="940" height="445"
-           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img src="img/popup-map.jpg" width="940" height="445" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </div>
   </div>
+  <script>
+//     карта
+
+    var mapLink = document.querySelector(".map");
+    var mapPopup = document.querySelector(".modal-popup-map");
+    var mapClose = mapPopup.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-popup-map-show");
+    });
+
+      mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-popup-map-show");
+    });
+
+//напишите нам
+
+
+    var contactsLink = document.querySelector(".btn-contacts");
+    var contactsPopup = document.querySelector(".modal-write-us");
+    var contactsClose = contactsPopup.querySelector(".modal-close");
+
+      contactsLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      contactsPopup.classList.add("modal-write-us-show");
+    });
+
+      contactsClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      contactsPopup.classList.remove("modal-write-us-show");
+    });
+
+
+
+
+</script>
 </body>
 </html>
