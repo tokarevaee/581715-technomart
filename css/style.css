@@ -43,6 +43,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 960px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -103,7 +104,7 @@ header.main-header-catalog {
   background-color: #f4f7f9;
   color: #ffffff;
   min-height: 320px;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .main-header a {
@@ -355,7 +356,7 @@ a.user-basket.active {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .second-header>div{
   min-width: 300px;
@@ -495,7 +496,7 @@ section .promo-block {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 .promo-block-column {
   display: -webkit-box;
@@ -515,7 +516,7 @@ section .promo-block {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 300px;
-  height: 124px;
+  height: 123px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -955,7 +956,7 @@ div.new-price:after {
   min-width: 218px;
   height: 88px;
   padding: 40px 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   z-index: 10;
   display: none;
 }
@@ -1108,7 +1109,7 @@ button.bookmark:active {
   font-size: 13px;
   line-height: 24px;
 
-  padding-top: 64px;
+  padding-top: 66px;
   margin-bottom: 50px;
 
 }
@@ -1294,7 +1295,7 @@ ul.service {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 86px;
+  margin-bottom: 87px;
 }
 
 .information {
@@ -1846,13 +1847,11 @@ h1.page-title {
   line-height: 18px;
   margin-right: 40px;
   letter-spacing: 0.11px;
-
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
   letter-spacing: 0.31px;
-  padding-left: 2px;
 }
 
 .breadcrumbs li::after {

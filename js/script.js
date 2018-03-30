@@ -1,17 +1,17 @@
-//     корзина
-var basketLink = document.querySelectorAll(".catalog .buy");
-var basketPopup = document.querySelector(".modal-popup-basket");
-var basketClose = basketPopup.querySelector(".modal-close");
-
-basketLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.add("modal-popup-basket-show");
-});
-
-basketClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.remove("modal-popup-basket-show");
-});
+////     корзина
+//var basketLink = document.querySelectorAll(".catalog .buy");
+//var basketPopup = document.querySelector(".modal-popup-basket");
+//var basketClose = basketPopup.querySelector(".modal-close");
+//
+//basketLink.addEventListener("click", function (evt) {
+//  evt.preventDefault();
+//  basketPopup.classList.add("modal-popup-basket-show");
+//});
+//
+//basketClose.addEventListener("click", function (evt) {
+//  evt.preventDefault();
+//  basketPopup.classList.remove("modal-popup-basket-show");
+//});
 
 //     карта
 
