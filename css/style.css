@@ -103,7 +103,7 @@ header.main-header-catalog {
   background-color: #f4f7f9;
   color: #ffffff;
   min-height: 320px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .main-header a {
@@ -360,14 +360,7 @@ a.user-basket.active {
   min-width: 275px;
 }
 
-/*.inner-page .header-contacts {*/
-  /*width: 275px;*/
-  /*margin-left: 4px;*/
-/*}*/
-
-
 .header-contacts a {
-
   border: 4px solid #ffffff;
   color: #ee3643;
   font-size: 21px;
@@ -455,59 +448,34 @@ a.registration {
   color: #ffffff;
 }
 
-section.product-category {
+.inner-page .main-header{
+  margin-bottom: 20px;
+}
+
+section .promo-block {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
-  margin-bottom: 53px;
-  min-height: 410px;
-  margin-top: 59px;
-}
-
-.product-category-left {
-  display: flex;
   flex-wrap: wrap;
-  /*margin-bottom: 0;*/
-  justify-content: flex-start;
-  min-width: 620px;
-  min-height: 410px;
+  margin-bottom: 33px;
 }
-
-.product-category-right {
-  margin-left: 20px;
+.promo-block-column {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  min-width: 300px;
-  justify-content: space-between;
 }
 
-
-.product-category-right div:last-child{
-  margin-bottom: 0;
-}
-
-.product-category-technics,
-.product-category-sales,
-.product-category-delivery,
-.product-category-tools,
-.product-category-materials {
-  min-width: 260px;
-  min-height: 80px;
+.promo-block-technics,
+.promo-block-sales,
+.promo-block-delivery,
+.promo-block-tools,
+.promo-block-materials {
+  box-sizing: border-box;
+  width: 300px;
+  height: 124px;
   position: relative;
   margin-bottom: 20px;
-  padding: 20px 20px;
 }
 
-.product-category-right div {
-  margin-bottom: 20px;
-  min-width: 260px;
-  min-height: 83px;
-  position: relative;
-  padding: 20px 20px;
-
-}
-.product-category-materials {
+.promo-block-materials {
   background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
@@ -516,16 +484,15 @@ section.product-category {
 
 }
 
-.product-category-tools {
+.promo-block-tools {
   background-color: #3bbce3;
-  margin-left: 20px;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: right 28px bottom 30px;
 
 }
 
-.product-category-technics {
+.promo-block-technics {
   background-color: #dc91d8;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
@@ -533,7 +500,7 @@ section.product-category {
 
 }
 
-.product-category-sales {
+.promo-block-sales {
   background-color: #8ed78f;
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
@@ -541,32 +508,73 @@ section.product-category {
 
 }
 
-.product-category-delivery {
+.promo-block-delivery {
   background-color: #ffc047;
   background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
   background-position: right 30px bottom 28px;
 
 }
-
-.product-category .bottom-category {
-  color: #ffffff;
-  border-radius: 2px;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 135px;
-  min-height: 38px;
+.flag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
 }
 
-.product-category .bottom-category:hover {
+.flag-new {
+  background: url("../img/new flag.png") no-repeat 0 0;
+}
+
+.catalog-item .flag{
+  top:-3px;
+  right: -1px;
+}
+
+.promo-block h3 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+
+  margin-top: 20px;
+  margin-bottom: 13px;
+  padding-left: 22px;
+  color: #ffffff;
+}
+
+.button-category {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  min-width: 135px;
+  padding: 10px 24px;
+  margin-left: 23px;
+  border-radius: 4px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.button-category:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.product-category .bottom-category:active {
+.button-category:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .slider-perforator,
 .slider-drill {
@@ -589,12 +597,14 @@ section.product-category {
   background-size: 100%;
 }
 
-.slider-perforator h1,
-.slider-drill h1 {
+.slider-perforator h2,
+.slider-drill h2 {
   margin: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
   padding-top: 23px;
   padding-left: 24px;
   font-size: 36px;
+  color: #ffffff;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
@@ -602,6 +612,7 @@ section.product-category {
 
 .slider-perforator span,
 .slider-drill span {
+  color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -621,7 +632,7 @@ section.product-category {
   min-width: 195px;
 
   position: absolute;
-  bottom: 22px;
+  bottom: 45px;
   left: 25px;
   z-index: 300;
 }
@@ -653,8 +664,8 @@ section.product-category {
 
 .slider-controls {
   position: absolute;
-  left: 308px;
-  bottom: 37px;
+  left: 307px;
+  bottom: 58px;
   z-index: 100;
 
   width: 160px;
@@ -717,61 +728,6 @@ section.product-category {
 #slider-drill:checked ~ .slider-drill {
   display: block;
 }
-
-
-
-.flag {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 60px;
-  height: 60px;
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
-}
-
-.flag-new {
-  background: url("../img/new flag.png") no-repeat 0 0;
-}
-
-.product-category h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  margin: 0;
-
-}
-
-.button-category {
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-
-  border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
-
-  display: inline-block;
-  padding: 9px 22px;
-  min-width: 90px;
-  text-align: center;
-  vertical-align: middle;
-
-  position: absolute;
-  bottom: 24px;
-  left: 25px;
-}
-
-.button-category:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.button-category:active {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 
 
 .header-popular {
@@ -1183,8 +1139,6 @@ button.bookmark:active {
   top: -25px;
   z-index: 100;
 }
-
-
 
 .guarantee p,
 .credit p,
@@ -1624,8 +1578,8 @@ a.logout::before {
   width: 21px;
   height: 17px;
 
-  top: 3px;
-  right: -3px;
+  top: -3px;
+  right: -55px;
 
   background-image: url("../img/icon-logout.svg");
   background-position: 0 0;
@@ -2437,10 +2391,8 @@ ul.site-navigation {
   top: 16px;
   right: 15px;
 
-
   width: 21px;
   height: 21px;
-
   font-size: 0;
 
   background-color: transparent;
