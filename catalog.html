@@ -97,7 +97,6 @@
       <div class="filters-left-column">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <span>Фильтр:</span>
-
         <form class="filter-main" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
             <legend>Цена:</legend>
@@ -177,10 +176,6 @@
           <button class="filters-button" type="submit">Показать</button>
         </form>
       </div>
-
-
-
-
       <div class="right-column">
         <div class="catalog-filters-vertical">
           <span>Сортировка:</span>
@@ -194,9 +189,6 @@
             </div>
            </div>
         </div>
-
-
-
         <div class="catalog">
           <h2 class="visually-hidden">Перфораторы</h2>
           <ul class="catalog-list">
@@ -248,12 +240,10 @@
               <div class="new-price">15500 Р.
               </div>
             </li>
-
             <li class="catalog-perforators">
               <div class="flag flag-new">Новинка</div>
               <img src="img/bfg6000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 6000">
               <a class="title" href="#">Перфоратор BOSCH BFG 6000</a>
-
               <div class="actions">
                 <button class="buy">Купить</button>
                 <button class="bookmark">В закладки</button>
@@ -301,7 +291,6 @@
             <li class="catalog-perforators">
               <img src="img/bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 2000">
               <a class="title" href="#">Перфоратор BOSCH BFG 2000</a>
-
               <div class="actions">
                 <button class="buy">Купить</button>
                 <button class="bookmark">В закладки</button>
@@ -324,7 +313,6 @@
   <div class="about-products-wrapper">
     <div class="about-products container">
       <h3>Пара слов о перфораторах</h3>
-
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
@@ -416,30 +404,12 @@
   <div class="popup-basket">
     <button class="modal-close" type="button">Закрыть</button>
     <span>Товар добавлен в корзину</span>
-
     <div class="gray-line">
       <button class="button btn-basket-red">Оформить заказ</button>
       <button class="button btn-basket-white">Продолжить покупки</button>
     </div>
   </div>
 </section>
-
-<script>
-  //     корзина
-
-  var basketLink = document.querySelector(".catalog .buy");
-  var basketPopup = document.querySelector(".modal-popup-basket");
-  var basketClose = basketPopup.querySelector(".modal-close");
-
-  basketLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    basketPopup.classList.add("modal-popup-basket-show");
-  });
-
-  basketClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    basketPopup.classList.remove("modal-popup-basket-show");
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
