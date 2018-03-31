@@ -267,6 +267,7 @@ a.user-order {
 
 a.user-basket.active {
   background-color: #ee3643;
+  padding: 12px 20px 12px 42px;
 }
 
 .user-basket::before {
@@ -679,7 +680,7 @@ section .promo-block {
   min-width: 195px;
 
   position: absolute;
-  bottom: 45px;
+  bottom: 43px;
   left: 25px;
   z-index: 300;
 }
@@ -1082,7 +1083,7 @@ button.bookmark:active {
   padding: 0;
 
   padding-top: 64px;
-  padding-bottom: 72px;
+  padding-bottom: 71px;
   background-color: #f2f6f8;
 
 }
@@ -1566,8 +1567,8 @@ p.footer-contacts {
   margin: 0;
   display: block;
 
-  padding-left: 6px;
-  /*padding-top: 2px;*/
+  padding-left: 3px;
+  padding-top: 2px;
 }
 
 .footer-bottom div:nth-child(2) {
@@ -1799,7 +1800,7 @@ h1.page-title {
   font-size: 30px;
   line-height: 30px;
 
-  padding: 31px 27px 29px 29px;
+  padding: 31px 27px 29px 28px;
 
   font-weight: normal;
 }
