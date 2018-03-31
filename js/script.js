@@ -14,21 +14,21 @@
 //});
 
 //     карта
+if(document.querySelector(".modal-popup-map"){
+  var mapLink = document.querySelector(".map");
+  var mapPopup = document.querySelector(".modal-popup-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
 
-var mapLink = document.querySelector(".map");
-var mapPopup = document.querySelector(".modal-popup-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-popup-map-show");
+  });
 
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-popup-map-show");
-});
-
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-popup-map-show");
-});
-
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-popup-map-show");
+  });
+};
 //напишите нам
 
 

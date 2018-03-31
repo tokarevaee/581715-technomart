@@ -122,7 +122,7 @@ header.main-header-catalog {
   width: 220px;
   display: block;
   vertical-align: top;
-  padding-top: 10px;
+  padding-top: 11px;
   text-align: center;
 }
 
@@ -1111,7 +1111,7 @@ button.bookmark:active {
   line-height: 24px;
 
   padding-top: 66px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
 }
 
@@ -1123,7 +1123,7 @@ button.bookmark:active {
   -ms-flex-pack: start;
   justify-content: flex-start;
   min-height: 285px;
-  margin-top: 67px;
+  margin-top: 69px;
 
 }
 
@@ -1296,7 +1296,7 @@ ul.service {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 87px;
+  margin-bottom: 89px;
 }
 
 .information {
@@ -1378,6 +1378,7 @@ ul.about-company {
   font-family: "Cuprum", "Arial", sans-serif;
   background-color: #32425c;
   color: #ffffff;
+  min-height: 298px;
 }
 
 .main-footer a {
@@ -1398,8 +1399,7 @@ ul.about-company {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  min-height: 140px;
-  margin-bottom: 50px;
+  min-height: 193px;
 }
 
 .footer-logo {
@@ -1420,7 +1420,7 @@ ul.about-company {
   display: block;
   font-weight: lighter;
   vertical-align: top;
-  padding-top: 16px;
+  padding-top: 17px;
   text-align: center;
 }
 .footer-column-right {
@@ -1440,7 +1440,6 @@ ul.about-company {
   -ms-flex-align: end;
   align-items: flex-end;
   min-width: 610px;
-  margin-top: 20px;
 }
 ul.footer-navigation-categories,
 ul.footer-navigation-site {
@@ -1448,16 +1447,13 @@ ul.footer-navigation-site {
   margin: 0;
 }
 
-ul.footer-navigation-categories {
-  margin-top: 10px;
-}
 
 ul.footer-navigation-site{
-  padding-top: 2px;
+  padding-top: 19px;
 }
 
 ul.footer-navigation-categories {
-  margin-top: 8px;
+  padding-top: 8px;
 }
 
 .footer-navigation-categories li,
@@ -1541,6 +1537,7 @@ ul.social {
   font-size: 16px;
   line-height: 18px;
   background-color: #293449;
+  min-height:107px;
 }
 
 .footer-bottom div:nth-last-child(1) {
@@ -1586,7 +1583,7 @@ ul.social {
   justify-content: flex-start;
   padding: 0;
   margin-top: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .social li {
