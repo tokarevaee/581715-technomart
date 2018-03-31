@@ -22,8 +22,7 @@
             <input type="submit" value="Найти" id="submit">
             <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="#ffffff" width="17" height="17"
                  viewBox="0 0 17 17">
-              <path
-                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
             </svg>
           </label>
         </form>
@@ -43,9 +42,10 @@
     <div class="container">
       <div class="second-header">
         <div>
-          <p>Интернет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
+          <p>Интернет-магазин
+            строительных материалов
+          </p>
+          <p>и инструментов для ремонта
           </p>
         </div>
         <div class="header-contacts">
@@ -58,10 +58,6 @@
         </div>
         <div class="user-navigation">
           <a class="login-link" href="#">
-            <svg class="login-link-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-              <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-              <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-            </svg>
             Войти
           </a>
           <a class="registration" href="#">
@@ -103,8 +99,7 @@
             <input class="visually-hidden" type="radio" id="slider-perforator" name="slider1" checked>
             <input class="visually-hidden" type="radio" id="slider-drill" name="slider1">
             <label class="slider-button-right" for="slider-perforator"></label>
-            <label class="slider-button-left" for="slider-drill"></label>
-
+          <label class="slider-button-left" for="slider-drill"></label>
             <div class="slider-controls">
               <label class="label-slider slider-controls-item-1" for="slider-perforator">Первый</label>
               <label class="label-slider slider-controls-item-2" for="slider-drill">Второй</label>
@@ -117,8 +112,7 @@
               <h2>Дрели</h2>
               <span>Соседям на радость!</span>
             </div>
-          </div>
-
+        </div>
         <div class="promo-block-column">
           <div class="promo-block-sales">
             <h3>Скидки 50%</h3>
@@ -190,40 +184,40 @@
         <a class="button btn-popular" href="#">Все производители</a>
       </div>
       <ul class="list-popular-producers">
-        <li>
-          <a href="#">
-            <img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
-          </a>
+        <li tabindex="0">
+          <a href="#" tabindex="0"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">       </a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="Makita"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/interscol.jpg" width="184" height="32" alt="Интерскол"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a>
         </li>
-        <li>
+        <li tabindex="0">
           <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="Metabo"></a>
         </li>
       </ul>
     </section>
     <section class="services-wrapping">
       <div class="container">
+        <div class="main-services">
         <h3>Сервисы</h3>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
+        </div>
         <div class="services">
           <input class="visually-hidden" type="radio" name="service" id="service-delivery" checked>
           <input class="visually-hidden" type="radio" name="service" id="service-guarantee">
@@ -234,10 +228,10 @@
                 <label for="service-delivery">Доставка</label>
               </li>
               <li class="li-service-guarantee">
-                <label for="service-guarantee">Гарантия</label>
+                <label for="service-guarantee" tabindex="0">Гарантия</label>
               </li>
               <li class="li-service-credit">
-                <label for="service-credit">Кредит</label>
+                <label for="service-credit" tabindex="0">Кредит</label>
               </li>
             </ul>
           </div>
@@ -245,7 +239,7 @@
             <div class="delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
+                к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!
               </p>
@@ -254,7 +248,8 @@
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его возгаранием,
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                вы всегда можете быть уверены в нашей гарантии.
+                Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </div>
@@ -276,7 +271,7 @@
           Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на
           гастарбайтерах
         </p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="about-company">
@@ -294,10 +289,11 @@
       </section>
       <section class="contacts">
         <h3>Контакты</h3>
-        <p>Вы можете забрать товар сами,<br>
+        <p>
+          Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <a class="map" href="#">
+        <a class="map" href="#" title="Кар">
           <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="button btn-contacts" href="write.html">Заблудились? Напишите нам!</a>
@@ -311,7 +307,7 @@
           <h1>Техномарт</h1>
         </div>
         <p class="footer-contacts">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
         </p>
       </div>
@@ -334,7 +330,8 @@
     <div class="footer-bottom-wrapper">
       <div class="container footer-bottom ">
         <div>
-          <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
+          <p class="footer-copyright">
+            © 2010–2017 Компания «Техномарт»
             Все права защищены
           </p>
         </div>
@@ -386,15 +383,15 @@
       <button class="modal-close" type="button">Закрыть</button>
       <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label for="write-us-name">Ваше имя:</label><br>
+          <label for="write-us-name">Ваше имя:</label>
           <input id="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста"><br>
         </p>
         <p>
-          <label for="write-us-email">Ваш e-mail:</label><br>
+          <label for="write-us-email">Ваш e-mail:</label>
           <input id="write-us-email" type="email" name="email" placeholder="Для отправки ответа"><br>
         </p>
         <p>
-          <label for="write-us-review">Текст письма:</label><br>
+          <label for="write-us-review">Текст письма:</label>
           <textarea id="write-us-review" name="review" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button btn-write-us">Отправить</button>
