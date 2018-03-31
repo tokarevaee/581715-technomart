@@ -14,7 +14,7 @@
 //});
 
 //     карта
-if(document.querySelector(".modal-popup-map"){
+
   var mapLink = document.querySelector(".map");
   var mapPopup = document.querySelector(".modal-popup-map");
   var mapClose = mapPopup.querySelector(".modal-close");
@@ -28,7 +28,6 @@ if(document.querySelector(".modal-popup-map"){
     evt.preventDefault();
     mapPopup.classList.remove("modal-popup-map-show");
   });
-};
 //напишите нам
 
 
