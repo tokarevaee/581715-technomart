@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body class="inner-page">
 <header class="main-header">
@@ -123,34 +123,34 @@
           <fieldset class="filter-producer">
             <legend>Производители:</legend>
             <ul>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch"
                        checked disabled>
                 <label for="filter-bosch">
                   Bosch
                 </label>
               </li>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol"
                        id="filter-interscol">
                 <label for="filter-interscol">
                   Интерскол
                 </label>
               </li>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="filter-makita"
                        checked>
                 <label for="filter-makita">
                   Makita
                 </label>
               </li>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label for="filter-dewalt">
                   Dewalt
                 </label>
               </li>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi"
                        id="filter-hitachi">
                 <label for="filter-hitachi">
@@ -162,17 +162,17 @@
           <fieldset class="power">
             <legend>Питание:</legend>
             <ul>
-              <li>
+              <li tabindex="0">
                 <input class="visually-hidden filter-input-radio" type="radio" name="power" value="battery"
                        id="filter-battery" checked>
                 <label for="filter-battery">
                   Аккумуляторные
                 </label>
               </li>
-              <li>
-                <input class="visually-hidden filter-input-radio" type="radio" name="power" value="cable"
-                       id="filter-cable">
-                <label for="filter-cable">
+              <li tabindex="0">
+                <input  class="visually-hidden filter-input-radio" type="radio" name="power" value="cable"
+                       id="filter-cable" >
+                <label  for="filter-cable">
                   Сетевые
                 </label>
               </li>
@@ -309,7 +309,7 @@
             <li class="pagination-item-current"><a>1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+            <li class="next"><a href="#">Следующая</a></li>
           </ul>
         </div>
       </div>
@@ -415,6 +415,6 @@
     </div>
   </div>
 </section>
-<script src="js/script.js"></script>
+<script src="js/js-min.js"></script>
 </body>
 </html>
